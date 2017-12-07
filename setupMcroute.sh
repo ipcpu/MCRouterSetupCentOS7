@@ -36,18 +36,18 @@ make && make install
 
 #install google-gflags
 mkdir -p /opt/google-gflags
-cp "$orangepath"/v2.1.1.tar.gz /opt/google-gflags
+cp "$orangepath"/gflags.tar.gz /opt/google-gflags
 cd /opt/google-gflags
-tar -zxvf v2.1.1.tar.gz
-cd gflags-v2.1.1
+tar -zxvf gflags.tar.gz
+cd gflags
 cmake -DBUILD_SHARED_LIBS=true .
 make && make install
 
 #install double-conversion
 mkdir -p /opt/double-conversion
-cp "$orangepath"/double-conversion-2.0.1.tar.gz /opt/double-conversion
+cp "$orangepath"/double-conversion.tar.gz /opt/double-conversion
 cd /opt/double-conversion
-tar -zxvf double-conversion-2.0.1.tar.gz
+tar -zxvf double-conversion.tar.gz
 cd double-conversion
 cmake -DBUILD_SHARED_LIBS=true .
 make && make install
