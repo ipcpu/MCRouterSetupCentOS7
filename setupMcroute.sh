@@ -56,10 +56,10 @@ make && make install
 #install folly
 ldconfig
 mkdir -p /opt/folly
-cp "$orangepath"/folly.zip /opt/folly/folly.zip
+cp "$orangepath"/folly.tar.gz /opt/folly/folly.tar.gz
 cd /opt/folly
-unzip -o -d /opt/folly folly.zip
-cd /opt/folly/folly-master/folly
+tar zxvf folly.tar.gz
+cd /opt/folly/folly/folly
 autoreconf --install
 ./configure
 make && make install
